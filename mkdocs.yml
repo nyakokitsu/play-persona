@@ -2,16 +2,28 @@ site_name: Play Persona Community
 site_url: https://persona.nyako.tk/
 theme:
   name: material
-  palette: 
-    # Palette toggle for dark mode
-    - scheme: slate
+  palette:
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/brightness-7
+        icon: material/link
         name: Switch to light mode
-        
-    # Palette toggle for light mode
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
       toggle:
-        icon: material/weather-night 
+        icon: material/toggle-switch
         name: Switch to dark mode
-
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
