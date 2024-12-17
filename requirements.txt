@@ -1,5 +1,6 @@
 mkdocs
 mkdocs-material
+mkdocs-redirects
 #Add pip package if needed
 #mkdocs-bootswatch
 #mkdocs-minify-plugin
